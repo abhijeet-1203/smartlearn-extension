@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Quiz</title>
+  <link rel="stylesheet" href="libs/bootstrap.min.css">
+</head>
+<body class="p-3">
+  <h3>📝 Quiz from Confusing Parts</h3>
+  <form id="quizForm">
+    <div class="mb-3">
+      <p><strong>Q1.</strong> What does overfitting mean?</p>
+      <input type="radio" name="q1" value="correct"> Model fits noise<br>
+      <input type="radio" name="q1" value="wrong"> Model generalizes well<br>
+      <input type="radio" name="q1" value="wrong"> None of the above<br>
+    </div>
+    <div class="mb-3">
+      <p><strong>Q2.</strong> Which algorithm is supervised learning?</p>
+      <input type="radio" name="q2" value="correct"> Linear Regression<br>
+      <input type="radio" name="q2" value="wrong"> K-Means<br>
+      <input type="radio" name="q2" value="wrong"> Apriori<br>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <div id="result" class="mt-3"></div>
+
+<script src="quiz.js"></script>
+</body>
+</html>
